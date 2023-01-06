@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>tBot | Discord Bot</title>
+<link rel="icon" type="image/x-icon" href="tbotavatar.png">
+<link rel="stylesheet" type="text/css" href="style.css">
+<style type="text/css" id="operaUserStyle"></style></head>
+<body>
+    <header>
+        <a href="https://tbot.t4r.xyz/#" class="logo">tBot</a>
+        <ul>
+            <li><a href="https://tbot.t4r.xyz/#" class="active">Home</a></li>
+            <li><a href="https://tbot.t4r.xyz/#sec">About</a></li>
+            <li><a href="https://tbot.t4r.xyz/#th">Commands</a></li>
+            <li><a href="https://tbot.t4r.xyz/#fiv">Support</a></li>
+        </ul>
+    </header>
+    <div class="test">
+        <img src="tbotavatar.png" id="moon">
+    </div>
+    <section>
+        <img src="stars.png" id="stars">
+        <!-- <img src="tbotavatar.png" id="moon"> -->
+        <img src="mountains_behind.png" id="mountains_behind">
+        <!-- <h2 id="text">Discord Bot</h2> -->
+        <a href="https://discord.com/oauth2/authorize?client_id=871724964091416627&permissions=1644393135190&scope=bot" id="btn2">Add to your server</a>
+        <!-- <a href="#sec" id="btn">Explore</a> -->
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Why tBot?</h2>
+        <p id="why">tBot has many functions, like moderation commands and auto deleting links to discord servers. It has also timer that you can set even on 4 days! It pings you when time ends so you don't lose track of time. There is command with which you can set many various settings(ex. embed color). Very advanced broadcast command will help you with making announcements on your discord server!</p>
+    </div>
+    <div class="th" id="th">
+       
+
+        <h2 id="list">Command list</h2>
+        <button class="bt" id="btnbasic" onclick="basic()">Basic</button>
+        <button title="Commands only for moderators" class="bt" id="btnmod" onclick="moderation()">Moderation</button>
+        <button title="ADMINISTRATOR permissions required" class="bt" id="btnset" onclick="settings()">Settings</button>
+        <br> <br>
+       <ul id="list2">
+        <h3>Basic</h3>
+        <li>.help <p>Command list</p></li>
+        <li>.avatar [user] <p>Shows user's avatar</p></li>
+        <li>.invite <p>Bot invite link</p></li>
+        <li>.s <p>Play slots game</p></li>
+        <li>.binary [text] <p>Convert text to binary.</p></li>
+        <li>.timer [time] <p>Sets timer</p></li>
+        <li>.random [max] <p>Random number from 0 to [max]</p></li>
+        <li>.msgcount [user]<p>Amount of messages <br>sent by selected user</p></li>
+        <li>.s <p>Play slots game</p></li>
+        <li>.calc [operation]<p>Calculate mathematic operation</p></li>
+        
+       </ul>
+       <ul id="mod">
+        <h3>Moderation</h3>
+        <i>Tip: Hover to see required permissions.</i>
+        <li title="MANAGE_MESSAGES">.clear [2-99]<p>Delete messages</p></li>
+        <li title="KICK_MEMBERS">.kick [user]<p>Kick user</p></li>
+        <li title="BAN_MEMBERS">.ban [user]<p>Ban user</p></li>
+        <li title="MANAGE_MESSAGES">.bc [text]<p>Send broadcast</p></li>
+        <li title="MANAGE_MESSAGES">.hyperlink [link] [text]<p>Send hyperlink</p></li>
+        <li title="ADMINISTRATOR">.settings<p>Settings list</p></li>
+        <li title="MANAGE_MESSAGES">.giveaway [time] [prize]<p>Create giveaway</p></li>
+       </ul>
+    
+    <ul id="settings">
+     <h3>Settings</h3> 
+     <i>ADMINISTRATOR permissions required</i>
+     <li>.settings blocklinks [y/n]<p>Disable/Enable blocking links to discord servers</p></li>
+     <li>.settings color [HEX]<p>Set embed color</p></li>
+     <li>.settings language [pl/en]<p>Set language</p></li>
+     <li>.bc [text]<p>Send broadcast</p></li>
+     <li>.settings autorole [roleName]<p>Set role that will be automatically added to every user that joins guild.</p></li>
+     <li>.settings joinmsg msg [message]<p>Set message that will be sent when user join your server.</p></li>
+     <li>.settings joinmsg channel [channel]<p>Set channel where joing messages will be sent.</p></li>
+    </ul>
+    </div>
+    <div class="titlesupport">
+        <h2 id="four">Developer</h2>
+    </div>
+    <div class="info">
+        <img class="avatar2" src="avatar.gif">
+        <h2 class="testtxt">tekb4r#8120</h2>
+    </div>
+
+
+    <div class="titlesupport" id="fiv">
+        <h2 id="four">Support server</h2>
+    </div>
+    <div class="infobottom">
+        <img class="avatar2" src="tbotavatar.png">
+        <h2 class="testtxt">tBot Server</h2>
+    </div>
+    <div class="infobottom">
+        <a id="join" href="https://discord.gg/zzysehnr9T">Join</a>
+    </div>
+    
+    <!-- <div class="s">
+        <img id="avatar2" src="avatar.gif">
+        <h2 id="testtxt">tekb4r#5351</h2>
+    </div> -->
+    <div class="footer">
+        <p id="copr">© 2022 tbot.t4r.xyz</p><a id="dev" href="https://t4r.xyz/">Developer</a>
+        <p id="bckg">Background - <a id="bclink" href="https://freepik.com/">Freepik</a></p>
+    </div>
+    <script>
+       
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let mountains_front = document.getElementById('mountains_front');
+        let btn = document.getElementById('btn');
+        let btn2 = document.getElementById('btn2');
+        let text = document.getElementById('text');
+        let header = document.querySelector('header');
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px'
+            moon.style.top = value * 1.05 + 'px'
+            mountains_behind.style.top = value * 0.5 + 'px'
+            mountains_front.style.top = value * 0 + 'px'
+            text.style.marginRight = value * 4 + 'px'
+            text.style.marginTop = value * 1.5 + 'px'
+            btn.style.marginTop = value * 1.5 + 'px'
+            btn2.style.marginTop = value * 2 + 'px'
+            header.style.top = value * 0.5 + 'px';
+        })
+        function basic() {
+            let btnbasic = document.getElementById('btnbasic');
+        let btnmod = document.getElementById('btnmod');
+        let btnset = document.getElementById('btnset');
+        var bas = document.getElementById("list2");
+        var mod = document.getElementById("mod")
+        var set = document.getElementById("settings")
+           bas.style.display = "inline-table";
+           mod.style.display = "none";
+           set.style.display = "none";
+           btnbasic.style.backgroundColor = "#1856db";
+           btnmod.style.backgroundColor = "#313131";
+           btnset.style.backgroundColor = "#313131";
+        }
+            function moderation() {
+                let btnbasic = document.getElementById('btnbasic');
+        let btnmod = document.getElementById('btnmod');
+        let btnset = document.getElementById('btnset');
+                var bas = document.getElementById("list2");
+        var mod = document.getElementById("mod")
+        var set = document.getElementById("settings")
+           bas.style.display = "none"
+           mod.style.display = "inline-table"
+           set.style.display = "none"
+           btnbasic.style.backgroundColor = "#313131";
+           btnmod.style.backgroundColor = "#1856db";
+           btnset.style.backgroundColor = "#313131";
+}
+function settings() {
+    let btnbasic = document.getElementById('btnbasic');
+        let btnmod = document.getElementById('btnmod');
+        let btnset = document.getElementById('btnset');
+                var bas = document.getElementById("list2");
+        var mod = document.getElementById("mod")
+        var set = document.getElementById("settings")
+           bas.style.display = "none"
+           mod.style.display = "none"
+           set.style.display = "inline-table"
+           btnbasic.style.backgroundColor = "#313131";
+           btnmod.style.backgroundColor = "#313131";
+           btnset.style.backgroundColor = "#1856db";
+}
+    </script>
+
+<style>
+    body {
+    margin-bottom: 0%;
+    background-color: rgb(14, 14, 14);
+    }
+    .scroll {
+    border: none;
+    padding: 3px;
+    font: 24px/36px sans-serif;
+    width: 200px;
+    height: 200px;
+    overflow: scroll;
+    }
+    ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    }
+    ::-webkit-scrollbar-track {
+    border: 1px solid rgb(14, 14, 14);
+    border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+    background: rgb(0, 119, 255);
+    border-radius: 0px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+    background: rgb(51, 145, 252);
+    }
+    </style>
+</body></html>

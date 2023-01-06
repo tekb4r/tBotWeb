@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body
+{
+    overflow-x: hidden;
+    min-height: 100vh;
+    background: linear-gradient(#618bc9,#7597de);
+}
+#why
+{
+    color: white;
+    font-size: 25px;
+    width: 800px;
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+
+}
+header .logo
+{
+    color: #fff;
+    background-color: #376cdd;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    /* text-transform: uppercase; */
+    letter-spacing: 2px;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+header .logo:hover
+{
+    color: rgb(133, 230, 247);
+    background-color: #376cdd;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    /* text-transform: uppercase; */
+    letter-spacing: 2px;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 10px;
+}
+header ul li a:hover ,
+header ul li a.active
+{
+    background: #fff;
+    color: #070707;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    overflow: hidden;
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#0c0c0c,transparent);
+    z-index: 100;
+}
+section img
+{
+    
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section img#moon
+{
+    /* align-content: center; */
+    width: 20px;
+    margin: auto;
+    display: block; 
+    height: 100px;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+    margin-left: 830px;
+    margin-right: 100px; 
+    transform: translateY(25px);
+}
+section img#mountains_front
+{
+    z-index: 10;
+}
+#text
+{
+    position: absolute;
+    color: #fff;
+    right: -550px;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9 ;
+}
+#btn
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color:#0c0c0c;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(180px);
+}
+#btn:hover
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: rgb(207, 207, 207);
+    color:#0c0c0c;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(179px);
+}
+#btn2
+{
+    position: absolute;
+    color: #fff;
+    text-decoration: none;
+    display: inline;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: rgb(8, 121, 36);
+    font-size: 1.5em;
+    z-index: 8;
+    transform: translateY(250px);
+}
+#btn2:hover
+{
+    position: absolute;
+    color: #fff;
+    text-decoration: none;
+    display: inline;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: rgb(44, 194, 81);
+    font-size: 1.5em;
+    z-index: 8;
+     transform: translateY(250px);
+}
+.sec 
+{
+    position: relative;
+    padding: 100px;
+    background: #0c0c0c;
+}
+.sec h2
+{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff
+}
+.sec p
+{
+    font-size: 1em;
+    color: #fff
+}
+.sec::before
+{
+    background: linear-gradient(to top,#0e0e0e,transparent);
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    z-index: 100;
+}
+.th
+{
+    
+    position: relative;
+    padding: 100px;
+    background: #0e0e0e;
+}
+
+.th h2
+{
+    text-align: left;
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: #fff
+}
+.th ul
+{
+
+    display:inline-table;
+}
+.th ul#mod
+{
+    display:none;
+    position: relative;
+    z-index: 1000;
+}
+.th ul h3
+{
+    font-size: 2em;
+    color: #fff;
+}
+.th ul i
+{
+
+    color: rgb(100, 100, 100);
+    font-size: 15px;
+}
+.th ul li
+{
+    font-size: 1.5em;
+    color: #fff;
+}
+.th ul li:hover
+{
+    font-size: 1.5em;
+    color: #fff;
+    background: linear-gradient(#141414,#07002e 500%);
+    border-radius: 10px;
+}
+.th p
+{
+    font-size: 0.9em;
+    color: #c4c4c4;
+    padding-bottom: 7px;
+}
+#avatar
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-left: 330px;
+    margin-right: auto;
+}
+#nick
+{
+    font-size: 30px;
+    text-align: left;
+    color: rgb(164, 222, 255);
+    transform: translateY(-80px);
+    margin-left: 460px;
+    
+}
+.fiv
+{
+    justify-content: center;
+    position: relative;
+    padding: 100px;
+    background: #0e0e0e;
+}
+.fiv h2
+{
+    text-align: center;
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff
+}
+.fiv a
+{
+    font-size: 30px;
+    text-align: left;
+    color: rgb(164, 222, 255);
+    transform: translateY(100px);
+    margin-left: 100px;
+}
+.test
+{
+    /* position:static; */
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+.obraz
+{
+    width: 60%;
+}
+#moon
+{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    transform: translateY(300px);
+    z-index: 1000;
+}
+#list
+{
+    text-align: left;
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff
+}
+.info
+{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background: #0e0e0e;
+    padding: 100px;
+}
+.infobottom
+{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background: #0e0e0e;
+    padding: 100px;
+    margin-bottom: -80px;
+}
+
+.avatar2
+{
+    margin-top: -100px;
+    height: 100px;
+    width: 100px;
+    margin-right: 30px;
+    border-radius: 50px;
+}
+.testtxt
+{
+    margin-top: -75px;
+    font-size: 2em;
+    color: white;
+}
+.testtxtdc
+{
+    margin-top: -75px;
+    font-size: 2em;
+    color: rgb(153, 235, 255);
+}
+#join
+{
+    transform: translateY(-110px);
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: rgb(0, 179, 9);
+    color:#0c0c0c;
+    font-size: 1.5em;
+    z-index: 9;
+
+}
+#join:hover
+{
+    transform: translateY(-109px);
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: rgb(73, 231, 99);
+    color:#0c0c0c;
+    font-size: 1.5em;
+    z-index: 9;
+
+}
+.titlesupport
+{
+    color:rgb(255, 255, 255);
+    background-color: #0e0e0e;
+    text-align: center;
+    padding: 50px;
+    font-size: 35px;
+}
+.list
+{
+    /* display: block; */
+    /* text-align: center; */
+    display: flex;
+    position: relative;
+    padding: 100px;
+    background: #0e0e0e;
+}
+.list ul
+{
+    width: 300px;
+    color: white;
+    font-size: 18px;
+    
+}
+.footer
+{
+    padding-top: 30px;
+    padding-bottom: 70px;
+    background-color: #1a2e5a;
+    /* background:linear-gradient(#0e0e0e,#447896 400%); */
+}
+.footer::before
+{
+    display: flex;
+    justify-content: center;
+background:linear-gradient(#0e0e0e, #000000);
+}
+#dev
+{
+    transform: translateY(30px);
+    display: block;
+    text-align: center;
+    color:rgb(152, 156, 206);
+}
+#dev:hover
+{
+    transform: translateY(30px);
+    display: block;
+    text-align: center;
+    color:rgb(151, 132, 255);
+}
+#bckg
+{
+    transform: translateY(40px);
+    display: block;
+    text-align: center;
+    color:rgb(159, 152, 196);;
+}
+.th ul#settings
+{
+    display:none;
+    position: relative;
+}
+i
+{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: -100px;
+    font-size: 15px;
+}
+.bt 
+{
+    background-color: #313131;
+    border-width: 0px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 20px;
+    color:white;
+}
+.bt:hover
+{
+    background-color: rgb(46, 46, 46);
+    border-width: 0px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 20px;
+    color:rgb(218, 218, 218);
+}
+
+#btnbasic
+{
+    background-color: #1856db;
+}
+#copr
+{
+    text-align: center;
+    color:#929292;
+    margin-bottom: -30px;
+}
+#bclink
+{
+    color:rgb(169, 142, 187);
+    text-decoration: none;
+}
