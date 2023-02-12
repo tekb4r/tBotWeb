@@ -10,7 +10,7 @@
 body
 {
     overflow-x: hidden;
-    max-height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(#618bc9,#7597de);
 }
 #why
