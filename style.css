@@ -10,7 +10,7 @@
 body
 {
     overflow-x: hidden;
-    min-height: 100vh;
+    max-height: 100vh;
     background: linear-gradient(#618bc9,#7597de);
 }
 #why
@@ -323,20 +323,23 @@ section img#mountains_front
 {
     width: 60%;
 }
-#moon
+#pnf
 {
+    text-align: center;
     height: 200px;
-    width: 200px;
+    width: 300px;
     border-radius: 100px;
     transform: translateY(300px);
     z-index: 1000;
+    color:#e7e7e7;
+    font-size: 50px;
 }
 #list
 {
     text-align: left;
     font-size: 3.5em;
     margin-bottom: 10px;
-    color: #fff
+    color: #fff;
 }
 .info
 {

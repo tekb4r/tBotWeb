@@ -15,18 +15,81 @@
         </ul>
     </header>
     <div class="test">
-      <h2>404 Page not found</h2>
+        <h1 id="pnf">404 <br> Page not Found</h1>
     </div>
     <section>
         <img src="stars.png" id="stars">
         <!-- <img src="tbotavatar.png" id="moon"> -->
         <img src="mountains_behind.png" id="mountains_behind">
         <!-- <h2 id="text">Discord Bot</h2> -->
-        <a href="https://discord.com/oauth2/authorize?client_id=871724964091416627&permissions=1644393135190&scope=bot" id="btn2">Add to your server</a>
-        <!-- <a href="#sec" id="btn">Explore</a> -->
+        
         <img src="mountains_front.png" id="mountains_front">
-    </section>
-   
+    
+    <script>
+       
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let mountains_front = document.getElementById('mountains_front');
+        let btn = document.getElementById('btn');
+        let btn2 = document.getElementById('btn2');
+        let text = document.getElementById('text');
+        let header = document.querySelector('header');
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px'
+            moon.style.top = value * 1.05 + 'px'
+            mountains_behind.style.top = value * 0.5 + 'px'
+            mountains_front.style.top = value * 0 + 'px'
+            text.style.marginRight = value * 4 + 'px'
+            text.style.marginTop = value * 1.5 + 'px'
+            btn.style.marginTop = value * 1.5 + 'px'
+            btn2.style.marginTop = value * 2 + 'px'
+            header.style.top = value * 0.5 + 'px';
+        })
+        function basic() {
+            let btnbasic = document.getElementById('btnbasic');
+        let btnmod = document.getElementById('btnmod');
+        let btnset = document.getElementById('btnset');
+        var bas = document.getElementById("list2");
+        var mod = document.getElementById("mod")
+        var set = document.getElementById("settings")
+           bas.style.display = "inline-table";
+           mod.style.display = "none";
+           set.style.display = "none";
+           btnbasic.style.backgroundColor = "#1856db";
+           btnmod.style.backgroundColor = "#313131";
+           btnset.style.backgroundColor = "#313131";
+        }
+            function moderation() {
+                let btnbasic = document.getElementById('btnbasic');
+        let btnmod = document.getElementById('btnmod');
+        let btnset = document.getElementById('btnset');
+                var bas = document.getElementById("list2");
+        var mod = document.getElementById("mod")
+        var set = document.getElementById("settings")
+           bas.style.display = "none"
+           mod.style.display = "inline-table"
+           set.style.display = "none"
+           btnbasic.style.backgroundColor = "#313131";
+           btnmod.style.backgroundColor = "#1856db";
+           btnset.style.backgroundColor = "#313131";
+}
+function settings() {
+    let btnbasic = document.getElementById('btnbasic');
+        let btnmod = document.getElementById('btnmod');
+        let btnset = document.getElementById('btnset');
+                var bas = document.getElementById("list2");
+        var mod = document.getElementById("mod")
+        var set = document.getElementById("settings")
+           bas.style.display = "none"
+           mod.style.display = "none"
+           set.style.display = "inline-table"
+           btnbasic.style.backgroundColor = "#313131";
+           btnmod.style.backgroundColor = "#313131";
+           btnset.style.backgroundColor = "#1856db";
+}
+    </script>
 
 <style>
     body {
