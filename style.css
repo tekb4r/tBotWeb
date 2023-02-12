@@ -334,6 +334,14 @@ section img#mountains_front
     color:#e7e7e7;
     font-size: 50px;
 }
+#moon
+{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    transform: translateY(300px);
+    z-index: 1000;
+}
 #list
 {
     text-align: left;
