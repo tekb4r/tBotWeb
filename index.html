@@ -40,40 +40,38 @@
         <br> <br>
        <ul id="list2">
         <h3>Basic</h3>
-        <li>.help <p>Command list</p></li>
-        <li>.avatar [user] <p>Shows user's avatar</p></li>
-        <li>.invite <p>Bot invite link</p></li>
-        <li>.s <p>Play slots game</p></li>
-        <li>.binary [text] <p>Convert text to binary.</p></li>
-        <li>.timer [time] <p>Sets timer</p></li>
-        <li>.random [max] <p>Random number from 0 to [max]</p></li>
-        <li>.msgcount [user]<p>Amount of messages <br>sent by selected user</p></li>
-        <li>.s <p>Play slots game</p></li>
-        <li>.calc [operation]<p>Calculate mathematic operation</p></li>
+        <li>/help <p>Command list</p></li>
+        <li>/avatar [user] <p>Shows user's avatar</p></li>
+        <li>/invite <p>Bot invite link</p></li>
+        <li>/s <p>Play slots game</p></li>
+        <li>/binary [text] <p>Convert text to binary.</p></li>
+        <li>/timer [time] <p>Sets timer</p></li>
+        <li>/random [max] <p>Random number from 0 to [max]</p></li>
+        <li>/msgcount [user]<p>Amount of messages <br>sent by selected user</p></li>
+        <li>/s <p>Play slots game</p></li>
+        <li>/calc [operation]<p>Calculate mathematic operation</p></li>
         
        </ul>
        <ul id="mod">
         <h3>Moderation</h3>
         <i>Tip: Hover to see required permissions.</i>
-        <li title="MANAGE_MESSAGES">.clear [2-99]<p>Delete messages</p></li>
-        <li title="KICK_MEMBERS">.kick [user]<p>Kick user</p></li>
-        <li title="BAN_MEMBERS">.ban [user]<p>Ban user</p></li>
-        <li title="MANAGE_MESSAGES">.bc [text]<p>Send broadcast</p></li>
-        <li title="MANAGE_MESSAGES">.hyperlink [link] [text]<p>Send hyperlink</p></li>
-        <li title="ADMINISTRATOR">.settings<p>Settings list</p></li>
-        <li title="MANAGE_MESSAGES">.giveaway [time] [prize]<p>Create giveaway</p></li>
+        <li title="MANAGE_MESSAGES">/clear [2-99]<p>Delete messages</p></li>
+        <li title="KICK_MEMBERS">/kick [user] [reason]<p>Kick user</p></li>
+        <li title="MODERATE_MEMBERS">/mute [user] [time] [reason]<p>Mute user</p></li>
+        <li title="BAN_MEMBERS">/ban [user] [reason]<p>Ban user</p></li>
+        <li title="MANAGE_MESSAGES">/bc [description] [title]<p>Send broadcast</p></li>
+        <li title="MANAGE_MESSAGES">/hyperlink [link] [text]<p>Send hyperlink</p></li>
+        <li title="ADMINISTRATOR">/settings<p>Settings list</p></li>
+        <li title="MANAGE_MESSAGES">/giveaway [time] [prize]<p>Create giveaway</p></li>
        </ul>
     
     <ul id="settings">
      <h3>Settings</h3> 
      <i>ADMINISTRATOR permissions required</i>
-     <li>.settings blocklinks [y/n]<p>Disable/Enable blocking links to discord servers</p></li>
-     <li>.settings color [HEX]<p>Set embed color</p></li>
-     <li>.settings language [pl/en]<p>Set language</p></li>
-     <li>.bc [text]<p>Send broadcast</p></li>
-     <li>.settings autorole [roleName]<p>Set role that will be automatically added to every user that joins guild.</p></li>
-     <li>.settings joinmsg msg [message]<p>Set message that will be sent when user join your server.</p></li>
-     <li>.settings joinmsg channel [channel]<p>Set channel where joing messages will be sent.</p></li>
+     <li>/sblocklinks [True/False]<p>Disable/Enable blocking links to discord servers</p></li>
+     <li>/scolor [HEX]<p>Set embed color</p></li>
+     <li>/sautorole [role]<p>Set role that will be automatically added to every user that joins guild.</p></li>
+     <li>/sjoinmsg [message] [channel]<p>Set message that will be sent when user join your server. Use <user> for user mention and <guild> for guild name.</p></li>
     </ul>
     </div>
     <div class="titlesupport">
