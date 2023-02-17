@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>tBot | Discord Bot</title>
+        <link rel="icon" type="image/x-icon" href="tbotavatar.png">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="UTF-8">
+        <meta content="tBot" property="og:title" />
+        <meta content="Multifunctional discord bot with many useful commands." property="og:description" />
+        <meta content="https://tbot.t4r.xyz" property="og:url" />
+        <meta content="https://tbot.t4r.xyz/tbotavatar.png" property="og:image" />
+        <meta content="#0754ed" data-react-helmet="true" name="theme-color" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, height=device-height" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        
+    </head>
+    <body>
+        <div id="particles-js"></div>
+        <div id="top">
+            <a id="back" href="https://tbot.t4r.xyz">Go back ➔</a>
+            <div id="menu">
+            <div id="menubutton"><span id="menubutt" class="material-symbols-outlined">
+                menu
+                </span></div>
+                <div id="menu-content">
+                    <a id="clist">Command list</a><hr>
+                    <a id="support" href="https://discord.gg/zzysehnr9T">Support Server</a> <hr>
+                    <a id="dev" href="https://t4r.xyz">Developer</a>
+                </div>
+            </div>
+        </div>
+        <div id="mid">
+            <div id="commands">
+                <div id="select">
+                    <a class="listselected" id="basic"onclick=BasicList() >Basic</a> <a onclick=ModList() id="mod">Moderation</a> <a onclick=SetList() id="set">Settings</a>
+                </div><hr>
+                <div id="Basic-commands">
+                <ul>
+                    <li><h5>/help</h5><p>Send command list.</p></li>
+                    <li><h5>/avatar [User]</h5><p>Display selected user's avatar.</p></li>
+                    <li><h5>/invite</h5><p>Send bot invite link.</p></li>
+                    <li><h5>/s</h5><p>Play slots game.</p></li>
+                    <li><h5>/binary [Number]</h5><p>Convert decimal number to binary.</p></li>
+                    <li><h5>/timer [Time]</h5><p>Set timer for selected time.</p></li>
+                </ul>
+                <ul>
+                    <li><h5>/random [Max]</h5><p>Get random number from 0 to [Max].</p></li>
+                    <li><h5>/msgcount [User]</h5><p>Get amount of messages sent by selected user.</p></li>
+                </ul>
+                </div>
+                <div id="Moderation-commands">
+                    <ul>
+                        <li><h5>/ban [User]</h5><p>Ban user.</p></li>
+                        <li><h5>/kick [User]</h5><p>Kick user.</p></li>
+                        <li><h5>/mute [User] [Time] [Reason]</h5><p>Mute user.</p></li>
+                        <li><h5>/bc [Content] [Title]</h5><p>Send embed message.</p></li>
+                        <li><h5>/hyperlink [Link] [Text]</h5><p>Send hyperlink.</p></li>
+                        <li><h5>/giveaway [Time] [Prize]</h5><p>Create giveaway.</p></li>
+                    </ul>
+                    <ul>
+                        <li><h5>/settings</h5><p>Settings list</p></li>
+                    </ul>
+                    </div>
+                <div id="Settings-commands">
+                    <ul>
+                        <li><h5>/sblocklinks [True/False]</h5><p>Disable/Enable blocking links feature.</p></li>
+                        <li><h5>/scolor [HEX]</h5><p>Set embed color.</p></li>
+                        <li><h5>/sautorole [Role]</h5><p>Set role that will be automatically added to every user that joins guild.</p></li>
+                        <li><h5>/sjoinmsg [Message] [Channel]</h5><p>Set message that will be sent when user join your server. Use <br> &#60;user&#62; for user mention and for &#60;guild&#62; guild name.</p></li>
+                    </ul>
+                    </div>
+            </div>
+          </div>
+          <footer>
+            <p>© <script>document.write(new Date().getFullYear())</script> tekb4r</p>
+        </footer>
+        <script src="particles.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>  
