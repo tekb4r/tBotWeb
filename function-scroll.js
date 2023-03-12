@@ -3,13 +3,21 @@ const rightarrow = document.getElementById("right-arrow-navigation");
 const text = document.getElementById("function-text");
 const image = document.getElementById("function-image");
 let x = document.cookie;
-var array = document.cookie.split("=");
-var number = array[1];
-if(!number){
+var arraycheck = document.cookie.split("=");
+var numbercheck = arraycheck[1];
+if(isNaN(numbercheck)){
 document.cookie = "functionlist=0";
 }
-console.log(document.cookie)
-pageChange(number)
+var array = document.cookie.split("=");
+var number = array[1];
+console.log(document.cookie);
+function getCookie(name) {
+    function escape(s) { return s.replace(/([.*+?\^$(){}|\[\]\/\\])/g, '\\$1'); }
+    var match = document.cookie.match(RegExp('(?:^|;\\s*)' + escape(name) + '=([^;]*)'));
+    return match ? match[1] : null;
+}
+console.log(getCookie("functionlist"))
+pageChange(number);
 function leftScroll() {
     var array = document.cookie.split("=");
     var number = array[1];
@@ -24,7 +32,8 @@ function leftScroll() {
 }
 function rightScroll() {
     var array = document.cookie.split("=");
-    var number = array[1];
+    var number = getCookie("functionlist");
+    console.log(number)
     var page = parseInt(number) + 1;
     if(number >= 4){
         var page = "0";
