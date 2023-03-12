@@ -65,4 +65,4 @@ function pageChange(change){
     return;
 }
 var page = parseInt(number) + 1;
-setInterval(rightScroll, 3000);
+setInterval(rightScroll, 5000);

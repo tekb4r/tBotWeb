@@ -328,14 +328,12 @@ footer
   }
   #function-scrollbar a{
     display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
     font-size: clamp(20px,3vw,30px);
-    margin-top: 10px;
+    margin:auto;
     cursor: pointer;
     transition: 0.2s ease;
     color: white;
-    padding: 2px;
+
     border-radius: 6px;
     margin-bottom: 1vh;
     z-index: 2;
@@ -344,6 +342,7 @@ footer
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+    padding: 5px;
   }
   #function-content{
     display: flex;
@@ -352,6 +351,7 @@ footer
   }
   #function-scrollbar a:hover{
     transform: scale(1.3);
+    background-color: #141742b9;
   }
   #function-image {
     display: flex;
@@ -406,6 +406,9 @@ footer
         text-align: center;
         height: 100%;
         width: 100%;
+      }
+      #left-arrow-navigation{
+        content: "A";
       }
   }
   #function-text h2:hover{
