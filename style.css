@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=New+Rocker&family=Noto+Sans+Lepcha&family=Signika+Negative:wght@500&display=swap');
 body
 {
+    margin: 0px;
     background: linear-gradient(45deg, #000, rgb(3, 5, 44));
     overflow-x: hidden;
+    height: 100%;
 }
 #particles-js
 {   
+    border: 0px;
+    margin: 0px;
     position: absolute; 
     left: 0; 
     right: 0; 
@@ -65,7 +70,7 @@ body
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-    width: 98%;
+    width: 100%;
     position: absolute;
     text-align: right;
 }
@@ -90,13 +95,11 @@ body
     cursor: pointer;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 17px;
+    transition: all 0.2s ease;
 }
 #menu-content a:hover
 {
-    transition: all 0.2s ease;
     color:rgb(108, 196, 255);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 17px;
 }
 #menu:hover #menu-content
 {
@@ -112,6 +115,7 @@ body
 #menu
 {
     margin-left: auto;
+    margin-right: 10px;
     width: 120px;
 }
 #addbutt
@@ -281,6 +285,9 @@ footer
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 5px;
 }
+footer a {
+  text-decoration: none;
+}
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -413,4 +420,21 @@ footer
   }
   #function-text h2:hover{
     color:rgb(167, 245, 255)
+  }
+  #info {
+    width: 100%;
+    text-align: center;
+    height: 45px;
+    color: white;
+    background: linear-gradient(35deg,#e40000, #ff7300);
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  #info p {
+    font-family: Noto Sans Lepcha;
+    font-size: clamp(15px,1.3vw,20px);
+    flex: 0 0 120px;
+    transform: translateY(-0.5vw);
   }
