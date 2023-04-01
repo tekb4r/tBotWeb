@@ -428,7 +428,7 @@ footer a {
     color: white;
     background: linear-gradient(35deg,#e40000, #ff7300);
     position: absolute;
-    display: block;
+    display: none;
     justify-content: center;
     align-items: center;
   }
